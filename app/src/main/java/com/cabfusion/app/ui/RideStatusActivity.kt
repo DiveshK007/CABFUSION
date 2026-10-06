@@ -221,6 +221,7 @@ class RideStatusActivity : AppCompatActivity() {
             Status.CANCELLED -> showCancelled()
         }
         showDriver(g)
+        if (lastNotified != g.status) b.scroll.smoothScrollTo(0, 0)       // a new status: bring its title into view
         if (lastNotified != null && lastNotified != g.status) notifyStatus(g)
         lastNotified = g.status
     }
