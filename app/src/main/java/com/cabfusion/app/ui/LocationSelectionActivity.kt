@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import com.cabfusion.app.R
 import com.cabfusion.app.core.FareCalculator
 import com.cabfusion.app.core.GeoPoint
+import com.cabfusion.app.data.ChennaiPlaces
 import com.cabfusion.app.data.Place
 import com.cabfusion.app.data.RouteResult
 import com.cabfusion.app.data.ServiceLocator
@@ -96,6 +97,12 @@ class LocationSelectionActivity : AppCompatActivity() {
                 if (q.length < 2) return
                 searchJob = lifecycleScope.launch {
                     delay(300)                                   // debounce typing
+                    // built-in Chennai places appear at once; geocoder results follow when the network answers
+                    val local = ChennaiPlaces.search(q)
+                    if (local.isNotEmpty()) {
+                        adapter.clear(); adapter.addAll(local); adapter.notifyDataSetChanged()
+                        if (field.hasFocus()) field.showDropDown()
+                    }
                     val results = ServiceLocator.maps.search(q)
                     adapter.clear(); adapter.addAll(results); adapter.notifyDataSetChanged()
                     if (results.isNotEmpty() && field.hasFocus()) field.showDropDown()

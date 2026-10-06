@@ -110,10 +110,10 @@ class ScreenshotFlowTest {
 
         id("cardRoute").click()
         type("etPickup", "Koyambedu", focus = true)
-        need("pickup suggestion", text("Koyambedu, Chennai", 15_000)).click()
+        need("pickup suggestion", text("Koyambedu, Chennai", 25_000)).click()
         type("etDrop", "Guindy", focus = true)
         snap("place_search", 2500)
-        need("drop suggestion", text("Guindy, Chennai", 15_000)).click()
+        need("drop suggestion", text("Guindy, Chennai", 25_000)).click()
         assertNotNull("route not ready", device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000))
         snap("route_and_fare", 5000)
 
