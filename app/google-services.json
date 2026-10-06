@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "974093730354",
+    "project_id": "cabfusion-7c45b",
+    "storage_bucket": "cabfusion-7c45b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974093730354:android:3b5b715164e8184a94722b",
+        "android_client_info": {
+          "package_name": "com.cabfusion.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0IGqFMydDQ1WuVBEPdj6zSyFwNY6FB-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

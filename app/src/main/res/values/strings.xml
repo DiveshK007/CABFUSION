@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CabFusion</string>
+    <string name="tagline">AI-Powered Shared Mobility</string>
+    <string name="demo_mode_note">Demo mode: running on the built-in on-device backend with sample riders.</string>
+    <string name="channel_rides">Ride updates</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/dark_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp"
+            android:src="@drawable/ic_back" android:contentDescription="Back"/>
+        <TextView style="@style/CF.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Create your account"/>
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="Share rides, split fares, cut traffic." android:textSize="14sp"/>
+
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="I want to"/>
+        <com.google.android.material.button.MaterialButtonToggleGroup android:id="@+id/toggleRole"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            app:singleSelection="true" app:selectionRequired="true" app:checkedButton="@+id/btnRider">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnRider" style="@style/CF.Button.Outline"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Ride"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnDriver" style="@style/CF.Button.Outline"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Drive"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Full name"/>
+        <EditText android:id="@+id/etName" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:hint="Divesh Kumar" android:inputType="textPersonName|textCapWords" android:autofillHints="name"/>
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Email"/>
+        <EditText android:id="@+id/etEmail" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:hint="you@example.com" android:inputType="textEmailAddress" android:autofillHints="emailAddress"/>
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Mobile number"/>
+        <EditText android:id="@+id/etPhone" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:hint="10-digit mobile" android:inputType="phone" android:maxLength="10" android:autofillHints="phone"/>
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Password"/>
+        <EditText android:id="@+id/etPassword" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:hint="At least 6 characters" android:inputType="textPassword" android:autofillHints="newPassword"/>
+        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Confirm password"/>
+        <EditText android:id="@+id/etConfirm" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:hint="Repeat password" android:inputType="textPassword"/>
+
+        <TextView android:id="@+id/tvError" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:textColor="@color/danger" android:visibility="gone"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnRegister" style="@style/CF.Button"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Create account"/>
+        <ProgressBar android:id="@+id/progress" android:layout_width="28dp" android:layout_height="28dp"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

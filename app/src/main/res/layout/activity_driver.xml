@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/dark_bg" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header"
+        android:orientation="vertical" android:padding="18dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_logo_cabfusion" android:contentDescription="@null"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp"
+                android:text="CabFusion Driver" android:textColor="@color/text_white" android:textSize="18sp" android:textStyle="bold"/>
+            <ImageView android:id="@+id/btnProfile" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp"
+                android:src="@drawable/ic_person" android:contentDescription="Profile"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvGreeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:text="Hi," android:textColor="@color/text_soft"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvOnline" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="You're offline" android:textColor="@color/text_white" android:textSize="22sp" android:textStyle="bold"/>
+            <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swOnline" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <EditText android:id="@+id/etVehicle" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:hint="Vehicle number · model (e.g. TN 09 AB 4521 · Swift Dzire)" android:inputType="textCapCharacters" android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/panelTrip" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:orientation="vertical" android:visibility="gone">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <org.osmdroid.views.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end"
+                android:padding="4dp" android:text="© OpenStreetMap contributors" android:textColor="#555555" android:textSize="10sp"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/dark_card"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:id="@+id/tvTripStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_mint_active"
+                android:paddingHorizontal="12dp" android:paddingVertical="3dp" android:textColor="@color/mint_active_text" android:textSize="12sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvNextStop" style="@style/CF.Body" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvTripMeta" style="@style/CF.Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnTripAction" style="@style/CF.Button" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Start driving to pickup"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/panelRequests" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pooled rides waiting for a driver"
+                android:textColor="@color/text_white" android:textSize="16sp" android:textStyle="bold"/>
+            <LinearLayout android:id="@+id/listGroups" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <TextView android:id="@+id/tvEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+                android:gravity="center" android:text="Go online to see ride requests." android:textColor="@color/text_muted"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

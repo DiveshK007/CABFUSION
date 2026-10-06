@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/dark_bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header"
+            android:gravity="center" android:orientation="vertical" android:paddingTop="48dp" android:paddingBottom="40dp">
+            <ImageView android:layout_width="84dp" android:layout_height="84dp" android:src="@drawable/ic_logo_cabfusion"
+                android:contentDescription="@string/app_name"/>
+            <TextView style="@style/CF.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:text="Welcome back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                android:text="Sign in to share your next ride" android:textColor="@color/text_soft"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email"/>
+            <EditText android:id="@+id/etEmail" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:hint="you@example.com" android:inputType="textEmailAddress" android:autofillHints="emailAddress"/>
+            <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="Password"/>
+            <EditText android:id="@+id/etPassword" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:hint="At least 6 characters" android:inputType="textPassword" android:autofillHints="password"/>
+            <TextView android:id="@+id/tvError" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:textColor="@color/danger" android:visibility="gone"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnLogin" style="@style/CF.Button"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Sign in"/>
+            <ProgressBar android:id="@+id/progress" android:layout_width="28dp" android:layout_height="28dp"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:visibility="gone"/>
+            <TextView android:id="@+id/tvRegister" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:gravity="center" android:padding="8dp"
+                android:text="New to CabFusion? Create an account" android:textColor="@color/accent_teal_bright" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDemo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:background="@drawable/bg_dark_card" android:padding="12dp"
+                android:text="@string/demo_mode_note" android:textColor="@color/text_muted" android:textSize="12sp" android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

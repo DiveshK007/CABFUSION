@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/dark_bg" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/primary_emerald"
+        android:gravity="center_vertical" android:padding="14dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp"
+            android:src="@drawable/ic_back" android:contentDescription="Back"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp"
+            android:text="Profile" android:textColor="@color/text_white" android:textSize="18sp" android:textStyle="bold"/>
+        
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:id="@+id/tvAvatar" android:layout_width="84dp" android:layout_height="84dp" android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_circle_success" android:gravity="center" android:text="D" android:textColor="@color/text_white"
+                android:textSize="34sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvName" style="@style/CF.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="12dp"/>
+            <TextView android:id="@+id/tvRole" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_mint_active" android:paddingHorizontal="12dp" android:paddingVertical="3dp"
+                android:textColor="@color/mint_active_text" android:textSize="12sp" android:textStyle="bold"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+                android:background="@drawable/bg_dark_card" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email"/>
+                <TextView android:id="@+id/tvEmail" style="@style/CF.Body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Mobile"/>
+                <TextView android:id="@+id/tvPhone" style="@style/CF.Body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Backend"/>
+                <TextView android:id="@+id/tvBackend" style="@style/CF.Body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:baselineAligned="false">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_dark_card"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:id="@+id/tvRides" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"
+                        android:textColor="@color/accent_teal_bright" android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="rides"/>
+                </LinearLayout>
+                <Space android:layout_width="12dp" android:layout_height="1dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/bg_dark_card"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:id="@+id/tvSaved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹0"
+                        android:textColor="@color/accent_teal_bright" android:textSize="22sp" android:textStyle="bold"/>
+                    <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="saved"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSwitchRole" style="@style/CF.Button.Outline" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Switch to driver mode"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnLogout" style="@style/CF.Button.Outline" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Log out" android:textColor="@color/danger"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

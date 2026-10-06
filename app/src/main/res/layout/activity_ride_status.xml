@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/dark_bg" android:orientation="vertical">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.42">
+        <org.osmdroid.views.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="12dp"
+            android:background="@drawable/bg_swap_button" android:padding="8dp" android:src="@drawable/ic_back" android:contentDescription="Back"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end"
+            android:padding="4dp" android:text="© OpenStreetMap contributors" android:textColor="#555555" android:textSize="10sp"/>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.58">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+                <TextView android:id="@+id/tvStatusChip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_mint_active" android:paddingHorizontal="12dp" android:paddingVertical="4dp"
+                    android:text="Searching" android:textColor="@color/mint_active_text" android:textSize="12sp" android:textStyle="bold"/>
+                <ProgressBar android:id="@+id/progress" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="10dp"/>
+                <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <TextView android:id="@+id/tvRideType" style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shared ride"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvTitle" style="@style/CF.Title" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="Finding riders on your route…"/>
+            <TextView android:id="@+id/tvSubtitle" style="@style/CF.Label" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:textSize="14sp" android:text=""/>
+
+            <!-- step indicator -->
+            <LinearLayout android:id="@+id/steps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <View android:id="@+id/step1" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/dark_border"/>
+                <Space android:layout_width="4dp" android:layout_height="1dp"/>
+                <View android:id="@+id/step2" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/dark_border"/>
+                <Space android:layout_width="4dp" android:layout_height="1dp"/>
+                <View android:id="@+id/step3" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/dark_border"/>
+                <Space android:layout_width="4dp" android:layout_height="1dp"/>
+                <View android:id="@+id/step4" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/dark_border"/>
+                <Space android:layout_width="4dp" android:layout_height="1dp"/>
+                <View android:id="@+id/step5" android:layout_width="0dp" android:layout_height="4dp" android:layout_weight="1" android:background="@color/dark_border"/>
+            </LinearLayout>
+
+            <!-- fare card -->
+            <LinearLayout android:id="@+id/cardFare" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:background="@drawable/bg_dark_card" android:orientation="vertical" android:padding="16dp" android:visibility="gone">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your fare"/>
+                        <TextView android:id="@+id/tvMyFare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹0"
+                            android:textColor="@color/text_white" android:textSize="26sp" android:textStyle="bold"/>
+                        <TextView android:id="@+id/tvSoloFare" style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvSaving" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_match_badge" android:paddingHorizontal="12dp" android:paddingVertical="8dp"
+                        android:text="" android:textColor="@color/match_badge_text" android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvTripMeta" style="@style/CF.Label" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text=""/>
+            </LinearLayout>
+
+            <!-- driver card -->
+            <LinearLayout android:id="@+id/cardDriver" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:background="@drawable/bg_dark_card" android:gravity="center_vertical" android:padding="16dp" android:visibility="gone">
+                <FrameLayout android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_circle_success">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:src="@drawable/ic_car" android:contentDescription="@null"/>
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:id="@+id/tvDriverName" style="@style/CF.Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvVehicle" style="@style/CF.Label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvEta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/accent_teal_bright" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView android:id="@+id/hdrMatches" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:text="Your co-riders" android:textColor="@color/text_white" android:textSize="16sp" android:textStyle="bold" android:visibility="gone"/>
+            <LinearLayout android:id="@+id/listMatches" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+
+            <TextView android:id="@+id/hdrStops" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:text="Stops" android:textColor="@color/text_white" android:textSize="16sp" android:textStyle="bold" android:visibility="gone"/>
+            <LinearLayout android:id="@+id/listStops" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnPrimary" style="@style/CF.Button" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Confirm shared ride" android:visibility="gone"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSecondary" style="@style/CF.Button.Outline" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Cancel request"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
