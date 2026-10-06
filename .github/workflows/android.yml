@@ -50,6 +50,7 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           script: |
             adb logcat -c || true
+            sleep 20; adb shell input keyevent KEYCODE_HOME || true
             ./gradlew --no-daemon connectedDebugAndroidTest > out/connected.log 2>&1 || echo "connected tests failed" >> out/status.txt
             mkdir -p out/screens && adb pull /data/local/tmp/cf/. out/screens/ || true
             adb logcat -d -v time > out/logcat.txt 2>&1 || true

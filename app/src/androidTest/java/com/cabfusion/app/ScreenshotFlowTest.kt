@@ -38,10 +38,20 @@ class ScreenshotFlowTest {
         ctx.getSharedPreferences("cf_driver", Context.MODE_PRIVATE).edit().clear().commit()
         ServiceLocator.useDemoBackend()
         device.executeShellCommand("mkdir -p /data/local/tmp/cf")
+        dismissSystemDialogs()
         // Turn the soft keyboard off so it never covers fields or buttons; text is entered through
         // accessibility (UiObject2.text) and does not need an IME.
         device.executeShellCommand("ime list -s").lines().filter { it.isNotBlank() }
             .forEach { device.executeShellCommand("ime disable ${it.trim()}") }
+    }
+
+    /** A slow emulator boot can leave an "isn't responding" dialog (e.g. for the launcher) on top of the app. */
+    private fun dismissSystemDialogs() {
+        repeat(3) {
+            val wait = device.findObject(By.text("Wait")) ?: device.findObject(By.textContains("Close app"))
+            if (wait == null) return
+            wait.click(); Thread.sleep(800)
+        }
     }
 
     private fun snap(name: String, settleMs: Long = 1200) {
@@ -69,6 +79,7 @@ class ScreenshotFlowTest {
 
     @Test fun fullRideFlow() {
         ActivityScenario.launch(LoginActivity::class.java)
+        Thread.sleep(1500); dismissSystemDialogs()
         id("btnLogin")
         snap("login")
 
