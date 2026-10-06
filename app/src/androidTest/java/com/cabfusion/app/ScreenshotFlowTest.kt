@@ -38,6 +38,10 @@ class ScreenshotFlowTest {
         ctx.getSharedPreferences("cf_driver", Context.MODE_PRIVATE).edit().clear().commit()
         ServiceLocator.useDemoBackend()
         device.executeShellCommand("mkdir -p /data/local/tmp/cf")
+        // Turn the soft keyboard off so it never covers fields or buttons; text is entered through
+        // accessibility (UiObject2.text) and does not need an IME.
+        device.executeShellCommand("ime list -s").lines().filter { it.isNotBlank() }
+            .forEach { device.executeShellCommand("ime disable ${it.trim()}") }
     }
 
     private fun snap(name: String, settleMs: Long = 1200) {
@@ -78,7 +82,6 @@ class ScreenshotFlowTest {
         type("etPhone", "9876543210")
         type("etPassword", "cabfusion123")
         type("etConfirm", "cabfusion123")
-        device.pressBack()
         snap("register")
         id("btnRegister").click()
 
@@ -92,7 +95,6 @@ class ScreenshotFlowTest {
         type("etDrop", "Guindy")
         snap("place_search", 2500)
         text("Guindy, Chennai", 15_000)?.click()
-        device.pressBack()
         device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000)
         snap("route_and_fare", 5000)
 
@@ -123,7 +125,6 @@ class ScreenshotFlowTest {
 
         id("btnSwitchRole").click()
         type("etVehicle", "TN 09 AB 4521 · Swift Dzire")
-        device.pressBack()
         id("swOnline").click()
         snap("driver_requests", 3000)
         textStarts("Accept ride")?.click()
