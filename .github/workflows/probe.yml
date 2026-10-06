@@ -1,0 +1,19 @@
+name: probe
+on: { push: { branches: [main] }, workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p out && echo "runner ok $(date -u)" > out/probe.txt
+          ls -l /dev/kvm >> out/probe.txt 2>&1 || true
+          java -version >> out/probe.txt 2>&1
+          echo "ANDROID_HOME=$ANDROID_HOME" >> out/probe.txt
+          ls $ANDROID_HOME/platforms >> out/probe.txt 2>&1
+      - name: publish results
+        run: |
+          cd out && git init -q && git checkout -q -b ci-results
+          git -c user.name=ci -c user.email=ci@local add . && git -c user.name=ci -c user.email=ci@local commit -qm "probe ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" ci-results
