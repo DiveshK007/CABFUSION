@@ -65,7 +65,7 @@ class ScreenshotFlowTest {
         device.wait(Until.findObject(By.res(pkg, res)), timeout)?.let { return it }
         val w = device.displayWidth / 2; val h = device.displayHeight
         repeat(5) {
-            device.swipe(w, (h * 0.70).toInt(), w, (h * 0.35).toInt(), 15)
+            device.swipe(w, (h * 0.45).toInt(), w, (h * 0.20).toInt(), 15)   // stay above any keyboard
             device.wait(Until.findObject(By.res(pkg, res)), 1_500)?.let { return it }
         }
         error("view $res not found")
@@ -75,7 +75,8 @@ class ScreenshotFlowTest {
     private fun textStarts(t: String, timeout: Long = 20_000): UiObject2? =
         device.wait(Until.findObject(By.textStartsWith(t)), timeout)
 
-    private fun type(res: String, value: String) { id(res).apply { click(); text = value } }
+    /** Sets text through accessibility; only fields that need focus (place search) are tapped, so the keyboard rarely opens. */
+    private fun type(res: String, value: String, focus: Boolean = false) { id(res).apply { if (focus) click(); text = value } }
 
     @Test fun fullRideFlow() {
         ActivityScenario.launch(LoginActivity::class.java)
@@ -105,9 +106,9 @@ class ScreenshotFlowTest {
         snap("dashboard")
 
         id("cardRoute").click()
-        type("etPickup", "Koyambedu")
+        type("etPickup", "Koyambedu", focus = true)
         text("Koyambedu, Chennai", 15_000)?.click()
-        type("etDrop", "Guindy")
+        type("etDrop", "Guindy", focus = true)
         snap("place_search", 2500)
         text("Guindy, Chennai", 15_000)?.click()
         device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000)
