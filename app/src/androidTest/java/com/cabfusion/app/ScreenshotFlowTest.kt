@@ -54,6 +54,12 @@ class ScreenshotFlowTest {
         }
     }
 
+    /** Closes the soft keyboard if it is showing (pressing back would otherwise leave the screen). */
+    private fun hideKeyboard() {
+        val dump = device.executeShellCommand("dumpsys input_method")
+        if (dump.contains("mInputShown=true") || dump.contains("isInputViewShown=true")) { device.pressBack(); Thread.sleep(500) }
+    }
+
     private fun snap(name: String, settleMs: Long = 1200) {
         Thread.sleep(settleMs)
         shot++
@@ -97,6 +103,7 @@ class ScreenshotFlowTest {
         textStarts("Passwords do not match", 5_000)
         snap("register_mismatch", 600)
         type("etConfirm", "cabfusion123")
+        hideKeyboard()
         snap("register")
         id("btnRegister").click()
 
@@ -110,6 +117,7 @@ class ScreenshotFlowTest {
         type("etDrop", "Guindy")
         snap("place_search", 2500)
         text("Guindy, Chennai", 15_000)?.click()
+        hideKeyboard()
         device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000)
         snap("route_and_fare", 5000)
 
@@ -140,6 +148,7 @@ class ScreenshotFlowTest {
 
         id("btnSwitchRole").click()
         type("etVehicle", "TN 09 AB 4521 · Swift Dzire")
+        hideKeyboard()
         id("swOnline").click()
         snap("driver_requests", 3000)
         textStarts("Accept ride")?.click()

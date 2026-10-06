@@ -106,6 +106,9 @@ class LocationSelectionActivity : AppCompatActivity() {
 
     private fun setPlace(isPickup: Boolean, p: Place) {
         searchJob?.cancel()
+        // a place has been chosen: put the keyboard away so the route and the booking buttons are visible
+        (getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+            .hideSoftInputFromWindow(b.root.windowToken, 0)
         if (isPickup) pickup = p else drop = p
         suppressSearch = true
         (if (isPickup) b.etPickup else b.etDrop).apply { setText(p.name, false); clearFocus() }
