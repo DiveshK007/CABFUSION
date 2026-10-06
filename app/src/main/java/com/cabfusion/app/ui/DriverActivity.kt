@@ -45,7 +45,13 @@ class DriverActivity : AppCompatActivity() {
         b.etVehicle.setText(prefs.getString("vehicle", ""))
         b.map.setup()
         b.btnProfile.setOnClickListener { go<ProfileActivity>() }
-        b.swOnline.setOnCheckedChangeListener { _, on -> setOnline(on) }
+        b.swOnline.setOnCheckedChangeListener { _, on ->
+            // going online: put the keyboard away so the list of waiting rides is visible
+            b.etVehicle.clearFocus()
+            (getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+                .hideSoftInputFromWindow(b.root.windowToken, 0)
+            setOnline(on)
+        }
         if (hasLocationPermission()) locate()
         else askLocation.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
         prefs.getString("active_group", null)?.let { follow(it) }
