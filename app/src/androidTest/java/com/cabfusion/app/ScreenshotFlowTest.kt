@@ -54,6 +54,8 @@ class ScreenshotFlowTest {
         }
     }
 
+    private fun <T> need(what: String, value: T?): T = value ?: throw AssertionError("$what not found")
+
     private fun snap(name: String, settleMs: Long = 1200) {
         Thread.sleep(settleMs)
         shot++
@@ -108,10 +110,10 @@ class ScreenshotFlowTest {
 
         id("cardRoute").click()
         type("etPickup", "Koyambedu", focus = true)
-        assertNotNull("pickup suggestion", text("Koyambedu, Chennai", 15_000)).click()
+        need("pickup suggestion", text("Koyambedu, Chennai", 15_000)).click()
         type("etDrop", "Guindy", focus = true)
         snap("place_search", 2500)
-        assertNotNull("drop suggestion", text("Guindy, Chennai", 15_000)).click()
+        need("drop suggestion", text("Guindy, Chennai", 15_000)).click()
         assertNotNull("route not ready", device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000))
         snap("route_and_fare", 5000)
 
@@ -138,7 +140,7 @@ class ScreenshotFlowTest {
         id("btnPrimary").click()
 
         id("bottomNav")
-        assertNotNull("bottom nav", device.findObject(By.text("My Rides"))).click()
+        need("bottom nav", device.findObject(By.text("My Rides"))).click()
         assertNotNull("history row", text("Completed", 10_000))
         snap("my_rides", 2500)
         device.pressBack()
@@ -149,7 +151,7 @@ class ScreenshotFlowTest {
         type("etVehicle", "TN 09 AB 4521 · Swift Dzire")
         id("swOnline").click()
         snap("driver_requests", 3000)
-        assertNotNull("waiting ride", textStarts("Accept ride", 20_000)).click()
+        need("waiting ride", textStarts("Accept ride", 20_000)).click()
         snap("driver_trip", 6000)
         id("btnTripAction").click()
         snap("driver_navigating", 6000)
