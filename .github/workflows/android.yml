@@ -29,6 +29,7 @@ jobs:
           echo "build=${{ steps.build.outcome }}" > out/status.txt
           cp app/build/outputs/apk/debug/app-debug.apk out/CabFusion-debug.apk 2>/dev/null || true
           mkdir -p out/unit && cp -r app/build/test-results/testDebugUnitTest/*.xml out/unit/ 2>/dev/null || true
+          cp -r app/build/eval out/eval 2>/dev/null || true
 
       - name: Enable KVM
         if: steps.build.outcome == 'success'

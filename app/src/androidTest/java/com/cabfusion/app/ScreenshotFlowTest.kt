@@ -46,8 +46,16 @@ class ScreenshotFlowTest {
         device.executeShellCommand("screencap -p /data/local/tmp/cf/%02d_%s.png".format(shot, name))
     }
 
-    private fun id(res: String, timeout: Long = 15_000): UiObject2 =
-        device.wait(Until.findObject(By.res(pkg, res)), timeout) ?: error("view $res not found")
+    /** Finds a view by id; if it is below the fold, scrolls the screen up a few times to reach it. */
+    private fun id(res: String, timeout: Long = 15_000): UiObject2 {
+        device.wait(Until.findObject(By.res(pkg, res)), timeout)?.let { return it }
+        val w = device.displayWidth / 2; val h = device.displayHeight
+        repeat(5) {
+            device.swipe(w, (h * 0.70).toInt(), w, (h * 0.35).toInt(), 15)
+            device.wait(Until.findObject(By.res(pkg, res)), 1_500)?.let { return it }
+        }
+        error("view $res not found")
+    }
 
     private fun text(t: String, timeout: Long = 20_000): UiObject2? = device.wait(Until.findObject(By.text(t)), timeout)
     private fun textStarts(t: String, timeout: Long = 20_000): UiObject2? =
