@@ -3,8 +3,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/dark_bg" android:orientation="vertical">
     <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.42">
         <org.osmdroid.views.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <ImageView android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="12dp"
-            android:background="@drawable/bg_swap_button" android:padding="8dp" android:src="@drawable/ic_back" android:contentDescription="Back"/>
+        <ImageView android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="12dp"
+            android:background="@drawable/bg_swap_button" android:padding="12dp" android:src="@drawable/ic_back" android:contentDescription="Back"/>
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end"
             android:padding="4dp" android:text="© OpenStreetMap contributors" android:textColor="#555555" android:textSize="10sp"/>
     </FrameLayout>

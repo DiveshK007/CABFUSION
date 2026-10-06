@@ -86,6 +86,7 @@ class ScreenshotFlowTest {
 
         // invalid login shows validation
         type("etEmail", "divesh@"); id("btnLogin").click()
+        assertNotNull("login validation", text("Enter a valid email address", 5_000))
         snap("login_validation", 600)
 
         id("tvRegister").click()
@@ -95,7 +96,7 @@ class ScreenshotFlowTest {
         type("etPassword", "cabfusion123")
         type("etConfirm", "cabfusion12")
         id("btnRegister").click()
-        textStarts("Passwords do not match", 5_000)
+        assertNotNull("password mismatch", textStarts("Passwords do not match", 5_000))
         snap("register_mismatch", 600)
         type("etConfirm", "cabfusion123")
         snap("register")
@@ -107,11 +108,11 @@ class ScreenshotFlowTest {
 
         id("cardRoute").click()
         type("etPickup", "Koyambedu", focus = true)
-        text("Koyambedu, Chennai", 15_000)?.click()
+        assertNotNull("pickup suggestion", text("Koyambedu, Chennai", 15_000)).click()
         type("etDrop", "Guindy", focus = true)
         snap("place_search", 2500)
-        text("Guindy, Chennai", 15_000)?.click()
-        device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000)
+        assertNotNull("drop suggestion", text("Guindy, Chennai", 15_000)).click()
+        assertNotNull("route not ready", device.wait(Until.findObject(By.res(pkg, "btnShared").enabled(true)), 30_000))
         snap("route_and_fare", 5000)
 
         id("btnShared").click()
@@ -125,15 +126,20 @@ class ScreenshotFlowTest {
         textStarts("Confirm shared ride")!!.click()
 
         snap("pooled", 1500)
-        text("Driver assigned", 30_000); snap("driver_assigned", 1500)
-        text("Driver is on the way", 30_000); snap("driver_arriving", 5000)
-        text("Enjoy the ride", 60_000); snap("on_trip", 6000)
+        assertNotNull("driver assigned", text("Driver assigned", 30_000)); snap("driver_assigned", 1500)
+        assertNotNull("driver arriving", text("Driver is on the way", 30_000)); snap("driver_arriving", 5000)
+        assertNotNull("on trip", text("Enjoy the ride", 60_000)); snap("on_trip", 6000)
         assertNotNull("trip did not complete", text("You've arrived", 90_000))
         snap("completed", 2000)
+        // the status notification for the finished trip, seen in the notification shade
+        device.openNotification()
+        if (device.wait(Until.findObject(By.textContains("Thanks for sharing")), 8_000) != null) snap("notification", 800)
+        device.pressBack(); Thread.sleep(800)
         id("btnPrimary").click()
 
         id("bottomNav")
-        device.findObject(By.text("My Rides"))?.click()
+        assertNotNull("bottom nav", device.findObject(By.text("My Rides"))).click()
+        assertNotNull("history row", text("Completed", 10_000))
         snap("my_rides", 2500)
         device.pressBack()
         device.findObject(By.text("Profile"))?.click()
@@ -143,7 +149,7 @@ class ScreenshotFlowTest {
         type("etVehicle", "TN 09 AB 4521 · Swift Dzire")
         id("swOnline").click()
         snap("driver_requests", 3000)
-        textStarts("Accept ride")?.click()
+        assertNotNull("waiting ride", textStarts("Accept ride", 20_000)).click()
         snap("driver_trip", 6000)
         id("btnTripAction").click()
         snap("driver_navigating", 6000)

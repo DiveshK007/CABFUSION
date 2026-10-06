@@ -4,11 +4,11 @@
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/primary_emerald"
         android:orientation="vertical" android:padding="16dp">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
-            <ImageView android:id="@+id/btnBack" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp"
+            <ImageView android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp" android:padding="12dp"
                 android:src="@drawable/ic_back" android:contentDescription="Back"/>
             <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp"
                 android:text="Plan your ride" android:textColor="@color/text_white" android:textSize="18sp" android:textStyle="bold"/>
-            <ImageView android:id="@+id/btnMyLocation" android:layout_width="36dp" android:layout_height="36dp" android:padding="6dp"
+            <ImageView android:id="@+id/btnMyLocation" android:layout_width="48dp" android:layout_height="48dp" android:padding="12dp"
                 android:src="@drawable/ic_my_location" app:tint="@color/text_soft" android:contentDescription="Use my location"/>
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center_vertical">
@@ -18,7 +18,7 @@
                 <AutoCompleteTextView android:id="@+id/etDrop" style="@style/CF.Input" android:layout_width="match_parent" android:layout_height="wrap_content"
                     android:layout_marginTop="8dp" android:completionThreshold="2" android:hint="Where to?" android:imeOptions="actionDone" android:inputType="text"/>
             </LinearLayout>
-            <FrameLayout android:id="@+id/btnSwap" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="10dp"
+            <FrameLayout android:id="@+id/btnSwap" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="10dp"
                 android:background="@drawable/bg_swap_button">
                 <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:src="@drawable/ic_swap" android:contentDescription="Swap"/>
             </FrameLayout>

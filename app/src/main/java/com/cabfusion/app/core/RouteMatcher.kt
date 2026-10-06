@@ -62,13 +62,18 @@ class RouteMatcher(private val cfg: Config = Config()) {
             .sortedByDescending { it.score }
             .toList()
 
-    fun score(me: TripPlan, other: TripPlan): MatchResult? {
-        if (abs(me.departureEpochMin - other.departureEpochMin) > cfg.timeWindowMin) return null
+    /** Which hard gate rejects [other] for [me], checked in the same order as [score]; null if all pass. */
+    fun rejection(me: TripPlan, other: TripPlan): String? = evaluate(me, other).second
+
+    fun score(me: TripPlan, other: TripPlan): MatchResult? = evaluate(me, other).first
+
+    private fun evaluate(me: TripPlan, other: TripPlan): Pair<MatchResult?, String?> {
+        if (abs(me.departureEpochMin - other.departureEpochMin) > cfg.timeWindowMin) return null to "time"
         val pickupGap = Geo.distanceM(me.pickup, other.pickup)
-        if (pickupGap > cfg.maxPickupGapM) return null
+        if (pickupGap > cfg.maxPickupGapM) return null to "pickup"
 
         val dirSim = directionSimilarity(me, other)
-        if (dirSim < cfg.minDirectionSim) return null
+        if (dirSim < cfg.minDirectionSim) return null to "direction"
 
         // Try every pickup/drop order for the pair and keep the one with the smallest worst-case
         // detour; that is the order the driver is given.
@@ -81,7 +86,7 @@ class RouteMatcher(private val cfg: Config = Config()) {
             if (best == null || p.worst < best.worst) best = p
         }
         val chosen = best!!
-        if (chosen.mine > cfg.maxDetourRatio || chosen.theirs > cfg.maxDetourRatio) return null
+        if (chosen.mine > cfg.maxDetourRatio || chosen.theirs > cfg.maxDetourRatio) return null to "detour"
         val myDetour = chosen.mine
         val theirDetour = chosen.theirs
         val sharedPath = chosen.length
@@ -95,7 +100,7 @@ class RouteMatcher(private val cfg: Config = Config()) {
         val raw = cfg.wOverlap * overlap + cfg.wDirection * dirSim +
             cfg.wPickup * pickupScore + cfg.wDetour * detourScore.coerceIn(0.0, 1.0)
         val score = (raw * 100).toInt().coerceIn(0, 100)
-        return MatchResult(other, score, overlap, dirSim, pickupGap, myDetour, theirDetour, sharedPath, mineFirst)
+        return MatchResult(other, score, overlap, dirSim, pickupGap, myDetour, theirDetour, sharedPath, mineFirst) to null
     }
 
     private data class Plan(val length: Double, val mine: Double, val theirs: Double, val meDroppedFirst: Boolean) {

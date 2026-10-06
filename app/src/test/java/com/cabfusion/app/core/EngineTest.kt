@@ -44,21 +44,46 @@ class EngineTest {
     }
 
     @Test fun oppositeDirectionIsRejected() {
-        assertNull(RouteMatcher().score(trip("me", annaNagar, tNagar), trip("x", tNagar, annaNagar)))
+        // pickups 1 km apart, but one rider heads south and the other north-east
+        val m = RouteMatcher()
+        val me = trip("me", annaNagar, tNagar); val x = trip("x", annaNagarWest, ennore)
+        assertNull(m.score(me, x))
+        assertEquals("direction", m.rejection(me, x))
     }
 
     @Test fun farPickupIsRejected() {
-        assertNull(RouteMatcher().score(trip("me", annaNagar, tNagar), trip("x", ennore, tNagar)))
+        // Ennore is about 19 km from Anna Nagar
+        val m = RouteMatcher()
+        val me = trip("me", annaNagar, tNagar); val x = trip("x", ennore, tNagar)
+        assertNull(m.score(me, x))
+        assertEquals("pickup", m.rejection(me, x))
     }
 
     @Test fun departureOutsideWindowIsRejected() {
-        assertNull(RouteMatcher().score(trip("me", annaNagar, tNagar, 600), trip("x", annaNagarWest, tNagar, 700)))
+        // departures 45 minutes apart; the window is 30
+        val m = RouteMatcher()
+        val me = trip("me", annaNagar, tNagar, 600); val x = trip("x", annaNagarWest, tNagar, 645)
+        assertNull(m.score(me, x))
+        assertEquals("time", m.rejection(me, x))
     }
 
     @Test fun largeDetourIsRejected() {
-        // same start, but the other rider heads far south-west: no useful shared stretch
+        // same pickup, directions 55° apart, two short trips: whoever is dropped second rides ~1.9× their solo distance
         val m = RouteMatcher()
-        assertTrue(m.rank(trip("me", annaNagar, kodambakkam), listOf(trip("x", annaNagarWest, tambaram))).isEmpty())
+        val south = GeoPoint(13.0670, 80.2101)                      // 2 km south of Anna Nagar
+        val southEast = GeoPoint(13.0747, 80.2252)                  // 2 km at bearing 125°
+        val me = trip("me", annaNagar, southEast); val x = trip("x", annaNagar, south)
+        assertNull(m.score(me, x))
+        assertEquals("detour", m.rejection(me, x))
+    }
+
+    @Test fun lowScoreIsNotOffered() {
+        // passes every gate, but the routes barely share any road: score below 40, so rank() drops it
+        val m = RouteMatcher()
+        val me = trip("me", annaNagar, kodambakkam); val x = trip("x", annaNagarWest, tambaram)
+        assertNull(m.rejection(me, x))
+        assertTrue(m.score(me, x)!!.score < 40)
+        assertTrue(m.rank(me, listOf(x)).isEmpty())
     }
 
     @Test fun rankingIsBestFirstAndGroupRespectsSize() {
