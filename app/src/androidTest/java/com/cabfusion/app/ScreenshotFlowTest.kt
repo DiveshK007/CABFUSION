@@ -119,13 +119,13 @@ class ScreenshotFlowTest {
 
         id("btnShared").click()
         snap("searching", 1500)
-        assertNotNull("no match found", textStarts("Confirm shared ride", 40_000))
+        assertNotNull("no match found", device.wait(Until.findObject(By.textContains("going your way")), 40_000))
         snap("match_found", 4000)
         val w = device.displayWidth / 2; val h = device.displayHeight
         device.swipe(w, (h * 0.85).toInt(), w, (h * 0.55).toInt(), 20)
         snap("match_details", 1000)
         device.swipe(w, (h * 0.55).toInt(), w, (h * 0.85).toInt(), 20)
-        textStarts("Confirm shared ride")!!.click()
+        id("btnPrimary").click()                // scrolls down to the confirm button if needed
 
         snap("pooled", 1500)
         assertNotNull("driver assigned", text("Driver assigned", 30_000)); snap("driver_assigned", 1500)
