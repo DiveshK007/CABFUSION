@@ -80,7 +80,7 @@ class LocationSelectionActivity : AppCompatActivity() {
     override fun onPause() { b.map.onPause(); super.onPause() }
 
     private fun wireSearch(field: AutoCompleteTextView, isPickup: Boolean) {
-        val adapter = ArrayAdapter<Place>(this, android.R.layout.simple_dropdown_item_1line, mutableListOf())
+        val adapter = PlaceAdapter(this)
         field.setAdapter(adapter)
         field.setOnItemClickListener { parent, _, pos, _ ->
             setPlace(isPickup, parent.getItemAtPosition(pos) as Place)
@@ -105,6 +105,7 @@ class LocationSelectionActivity : AppCompatActivity() {
     }
 
     private fun setPlace(isPickup: Boolean, p: Place) {
+        searchJob?.cancel()
         if (isPickup) pickup = p else drop = p
         suppressSearch = true
         (if (isPickup) b.etPickup else b.etDrop).apply { setText(p.name, false); clearFocus() }
@@ -172,4 +173,19 @@ class LocationSelectionActivity : AppCompatActivity() {
         const val EXTRA_DROP_LAT = "drop_lat"
         const val EXTRA_DROP_LNG = "drop_lng"
     }
+}
+
+/**
+ * Suggestions come from MapsRepository.search(), which already matches the query, so the adapter must
+ * not filter them again. (ArrayAdapter's own filter keeps a private copy of the list; items added after
+ * the first keystroke would never be shown.)
+ */
+class PlaceAdapter(context: android.content.Context) :
+    ArrayAdapter<Place>(context, android.R.layout.simple_dropdown_item_1line, mutableListOf()) {
+    private val passThrough = object : android.widget.Filter() {
+        override fun performFiltering(constraint: CharSequence?) = FilterResults().apply { count = this@PlaceAdapter.count }
+        override fun publishResults(constraint: CharSequence?, results: FilterResults?) = notifyDataSetChanged()
+        override fun convertResultToString(resultValue: Any?): CharSequence = (resultValue as? Place)?.name ?: ""
+    }
+    override fun getFilter(): android.widget.Filter = passThrough
 }
