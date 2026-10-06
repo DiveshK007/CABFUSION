@@ -1,0 +1,10 @@
+section,name,detail,value
+ranked,Sanjay,score|overlap|pickup_gap_m,97|99|297
+stop,Divesh,pickup,Koyambedu
+stop,Sanjay,pickup,Koyambedu (Rohini)
+stop,Divesh,drop,Guindy
+stop,Sanjay,drop,Guindy
+fare,Divesh,solo|share|saving_pct,265|125|53
+fare,Sanjay,solo|share|saving_pct,247|113|54
+trip,pooled,km|min,14.4|18
+trip,solo_sum,km,26.2

@@ -1,0 +1,29 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.cabfusion.app"
+    test_package: "com.cabfusion.app.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.cabfusion.app/additional_test_output"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/apk/debug/app-debug.apk] on device emulator-5554.
+INFO: Installing [/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.cabfusion.app for device emulator-5554.
+INFO: Uninstalling com.cabfusion.app.test for device emulator-5554.
+INFO: Execute com.cabfusion.app.BackendRulesTest.confirmedOfferMatchesEveryMember: PASSED
+INFO: Execute com.cabfusion.app.BackendRulesTest.soloRideChargesSoloFare: PASSED
+INFO: Execute com.cabfusion.app.BackendRulesTest.riderCannotBeInTwoGroups: PASSED
+INFO: Execute com.cabfusion.app.BackendRulesTest.twoDriversCannotAcceptTheSameRide: PASSED
+INFO: Execute com.cabfusion.app.ScreenshotFlowTest.fullRideFlow: PASSED

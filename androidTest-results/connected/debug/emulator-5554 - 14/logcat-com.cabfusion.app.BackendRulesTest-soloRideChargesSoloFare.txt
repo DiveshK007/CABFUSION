@@ -1,0 +1,45 @@
+10-06 14:10:27.365  4976  4996 I TestRunner: started: soloRideChargesSoloFare(com.cabfusion.app.BackendRulesTest)
+10-06 14:10:27.398   337  5119 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:27.400   337  5122 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:27.400   337  5122 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:27.401   337  5122 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:27.402   337  5121 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:27.403   337  5121 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:27.403   337  5121 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:27.407   337  5124 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:27.408   337  5126 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:27.409   337  5127 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:27.409   337  5126 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:27.410   337  5126 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:27.410   337  5128 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:27.411   337  5128 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:27.412   337  5128 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:27.417   337  5125 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:27.417   337  5125 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:27.417   337  5125 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:27.418   337  5129 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:27.418   337  5129 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:27.418   337  5129 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:27.426  4976  5117 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:27.430  4976  5123 D TrafficStats: tagSocket(91) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:27.431  4976  5116 D TrafficStats: tagSocket(86) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:27.442  4976  5120 D TrafficStats: tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:27.446   337  5130 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:27.446   337  5131 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:27.446   337  5131 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:27.447   337  5131 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:27.453   337  5132 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:27.453   337  5132 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:27.453   337  5132 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:27.455  4976  5118 D TrafficStats: tagSocket(90) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:27.822   337   337 I netd    : tetherGetStats() -> {[]} <0.31ms>
+10-06 14:10:27.827   337   337 I netd    : bandwidthSetGlobalAlert(2097152) <0.10ms>
+10-06 14:10:27.829   337   337 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.42ms>
+10-06 14:10:27.830   337   337 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.67ms>
+10-06 14:10:27.834   337   337 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.38ms>
+10-06 14:10:27.835   337   337 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.66ms>
+10-06 14:10:27.837   520   836 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:520/1000(android) for DataUsageRequest [ requestId=12, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3433894 ] accessLevel:3
+10-06 14:10:27.838   520   755 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:520/1000(android) for DataUsageRequest [ requestId=13, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3430659 ] accessLevel:3
+10-06 14:10:27.858   337   337 I netd    : tetherGetStats() -> {[]} <0.37ms>
+10-06 14:10:28.050   837   837 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-06 14:10:28.490  4976  4996 I TestRunner: finished: soloRideChargesSoloFare(com.cabfusion.app.BackendRulesTest)

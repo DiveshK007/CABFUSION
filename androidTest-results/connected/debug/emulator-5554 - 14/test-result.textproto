@@ -1,0 +1,276 @@
+# 2026-10-06T14:13:46.531363925Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 5
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "BackendRulesTest"
+    test_package: "com.cabfusion.app"
+    test_method: "confirmedOfferMatchesEveryMember"
+    start_time {
+      seconds: 1791295825
+      nanos: 327000000
+    }
+    end_time {
+      seconds: 1791295827
+      nanos: 560000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-com.cabfusion.app.BackendRulesTest-confirmedOfferMatchesEveryMember.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "BackendRulesTest"
+    test_package: "com.cabfusion.app"
+    test_method: "soloRideChargesSoloFare"
+    start_time {
+      seconds: 1791295827
+      nanos: 592000000
+    }
+    end_time {
+      seconds: 1791295828
+      nanos: 699000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-com.cabfusion.app.BackendRulesTest-soloRideChargesSoloFare.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "BackendRulesTest"
+    test_package: "com.cabfusion.app"
+    test_method: "riderCannotBeInTwoGroups"
+    start_time {
+      seconds: 1791295828
+      nanos: 703000000
+    }
+    end_time {
+      seconds: 1791295829
+      nanos: 686000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-com.cabfusion.app.BackendRulesTest-riderCannotBeInTwoGroups.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "BackendRulesTest"
+    test_package: "com.cabfusion.app"
+    test_method: "twoDriversCannotAcceptTheSameRide"
+    start_time {
+      seconds: 1791295829
+      nanos: 691000000
+    }
+    end_time {
+      seconds: 1791295830
+      nanos: 446000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-com.cabfusion.app.BackendRulesTest-twoDriversCannotAcceptTheSameRide.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "ScreenshotFlowTest"
+    test_package: "com.cabfusion.app"
+    test_method: "fullRideFlow"
+    start_time {
+      seconds: 1791295830
+      nanos: 450000000
+    }
+    end_time {
+      seconds: 1791296023
+      nanos: 690000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-com.cabfusion.app.ScreenshotFlowTest-fullRideFlow.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/runner/work/CABFUSION/CABFUSION/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

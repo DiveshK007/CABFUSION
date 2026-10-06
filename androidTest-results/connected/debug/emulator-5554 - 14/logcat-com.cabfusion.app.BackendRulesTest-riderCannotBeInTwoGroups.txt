@@ -1,0 +1,7 @@
+10-06 14:10:28.491  4976  4996 I TestRunner: started: riderCannotBeInTwoGroups(com.cabfusion.app.BackendRulesTest)
+10-06 14:10:28.514  4976  5136 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:28.518  4976  5137 D TrafficStats: tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:28.525  4976  5139 D TrafficStats: tagSocket(90) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:28.526  4976  5138 D TrafficStats: tagSocket(91) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:28.535  4976  5135 D TrafficStats: tagSocket(94) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.485  4976  4996 I TestRunner: finished: riderCannotBeInTwoGroups(com.cabfusion.app.BackendRulesTest)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cabfusion.app.core.EngineTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-06T14:06:32" hostname="runnervm8df0l" time="0.189">
+  <properties/>
+  <testcase name="farPickupIsRejected" classname="com.cabfusion.app.core.EngineTest" time="0.035"/>
+  <testcase name="fareQuoteAndMinimum" classname="com.cabfusion.app.core.EngineTest" time="0.003"/>
+  <testcase name="largeDetourIsRejected" classname="com.cabfusion.app.core.EngineTest" time="0.025"/>
+  <testcase name="oppositeDirectionIsRejected" classname="com.cabfusion.app.core.EngineTest" time="0.002"/>
+  <testcase name="haversineMatchesKnownDistance" classname="com.cabfusion.app.core.EngineTest" time="0.013"/>
+  <testcase name="partialOverlapScoresLowerThanFullOverlap" classname="com.cabfusion.app.core.EngineTest" time="0.026"/>
+  <testcase name="nearlyIdenticalTripsScoreHigh" classname="com.cabfusion.app.core.EngineTest" time="0.008"/>
+  <testcase name="lowScoreIsNotOffered" classname="com.cabfusion.app.core.EngineTest" time="0.042"/>
+  <testcase name="rankingIsBestFirstAndGroupRespectsSize" classname="com.cabfusion.app.core.EngineTest" time="0.01"/>
+  <testcase name="splitIsCheaperThanSoloAndProportional" classname="com.cabfusion.app.core.EngineTest" time="0.006"/>
+  <testcase name="departureOutsideWindowIsRejected" classname="com.cabfusion.app.core.EngineTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

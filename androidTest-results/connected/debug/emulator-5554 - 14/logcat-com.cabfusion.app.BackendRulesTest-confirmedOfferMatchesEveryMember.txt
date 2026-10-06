@@ -1,0 +1,666 @@
+10-06 14:10:25.121  4976  4996 I TestRunner: started: confirmedOfferMatchesEveryMember(com.cabfusion.app.BackendRulesTest)
+10-06 14:10:25.139  1567  1567 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-06 14:10:25.142  5004  5004 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10132; state: ENABLED
+10-06 14:10:25.142  5004  5004 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10132; state: DISABLED
+10-06 14:10:25.149  5004  5004 D nativeloader: Configuring clns-6 for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=31, uses_libraries=ALL, library_path=/product/priv-app/Velvet/lib/x86_64:/product/priv-app/Velvet/Velvet.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.googlequicksearchbox
+10-06 14:10:25.149  5004  5004 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-06 14:10:25.149  5004  5004 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-06 14:10:25.150  1399  3619 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, gmail_android.user#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-06 14:10:25.207  1399  1406 I .gms.persistent: Compiler allocated 4914KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-06 14:10:25.224  5004  5004 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+10-06 14:10:25.224  5004  5004 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/Velvet/Velvet.apk. target_sdk_version=31, uses_libraries=, library_path=/product/priv-app/Velvet/lib/x86_64:/product/priv-app/Velvet/Velvet.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.googlequicksearchbox:/product/lib64:/system/product/lib64
+10-06 14:10:25.225  5004  5004 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+10-06 14:10:25.249  1399  3826 D TrafficStats: tagSocket(116) with statsTag=0x1203, statsUid=10131
+10-06 14:10:25.260  5004  5004 V GraphicsEnvironment: Currently set values for:
+10-06 14:10:25.260  5004  5004 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-06 14:10:25.260  5004  5004 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-06 14:10:25.262  5004  5004 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.googlequicksearchbox: false
+10-06 14:10:25.262  5004  5004 V GraphicsEnvironment: com.google.android.googlequicksearchbox is not listed in per-application setting
+10-06 14:10:25.262  5004  5004 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-06 14:10:25.271  5004  5004 D CompatibilityChangeReporter: Compat change id reported: 3400644; UID 10132; state: DISABLED
+10-06 14:10:25.272  5004  5004 I MultiDex: VM with version 2.1.0 has multidex support
+10-06 14:10:25.273  5004  5004 I MultiDex: Installing application
+10-06 14:10:25.273  5004  5004 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-06 14:10:25.291  5004  5004 I DefaultInitializer: Initialized process com.google.android.googlequicksearchbox
+10-06 14:10:25.335  5004  5034 W equicksearchbox: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+10-06 14:10:25.336  5004  5034 W equicksearchbox: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-06 14:10:25.336  5004  5034 W equicksearchbox: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-06 14:10:25.348   337  5035 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:25.348   337  5038 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:25.348   337  5040 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:25.349   337  5039 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:25.349   337  5037 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:25.350   337  5036 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:25.351   337  5040 I resolv  : res_nsend: used send_dg 107 terrno: 0
+10-06 14:10:25.351   337  5040 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:25.352   337  5042 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:25.352   337  5042 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:25.352   337  5042 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:25.355   337  5045 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:25.355   337  5047 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:25.355   337  5047 I resolv  : resolv_cache_lookup: Waiting for previous request
+10-06 14:10:25.355   337  5044 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:25.357   337  5044 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:25.357   337  5044 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:25.360   337  5041 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:25.360   337  5045 I resolv  : res_nsend: used send_dg 123 terrno: 0
+10-06 14:10:25.360   337  5043 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:25.360   337  5045 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:25.360   337  5043 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:25.360   337  5043 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:25.360   337  5047 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:25.360   337  5049 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:25.360   337  5047 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:25.360   337  5049 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:25.360   337  5049 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:25.361   337  5048 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:25.361   337  5048 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:25.361   337  5048 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:25.361   337  5046 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:25.361   337  5046 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:25.361   337  5046 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:25.363  4976  5026 D TrafficStats: tagSocket(86) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:25.364  4976  5028 D TrafficStats: tagSocket(89) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:25.365  4976  5024 D TrafficStats: tagSocket(90) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:25.369   337  5041 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:25.369   337  5041 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:25.374  4976  5025 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:25.375  4976  5023 D TrafficStats: tagSocket(91) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:25.389  1399  1470 W BpBinder: Large outgoing transaction of 328568 bytes, interface descriptor , code 4
+10-06 14:10:25.416  1399  1470 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-06 14:10:25.422  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-06 14:10:25.429  1399  3619 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-06 14:10:25.441  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-06 14:10:25.442  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-06 14:10:25.442  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-06 14:10:25.444  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-06 14:10:25.444  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-06 14:10:25.445  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-06 14:10:25.446  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-06 14:10:25.446  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-06 14:10:25.447  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-06 14:10:25.448  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-06 14:10:25.449  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-06 14:10:25.449  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-06 14:10:25.450  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-06 14:10:25.450  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-06 14:10:25.451  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-06 14:10:25.451  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-06 14:10:25.451  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-06 14:10:25.452  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-06 14:10:25.452  1723  2640 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-06 14:10:25.452  1723  2640 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-06 14:10:25.453  1723  2640 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-06 14:10:25.454  1399  1470 E bwfc    : Phenotype API error. Event # edax@5ef7cfe, EventCode: 32 [CONTEXT service_id=51 ]
+10-06 14:10:25.454  1399  1470 E bwfc    : bwdx: 29503
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at bwgv.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 14:10:25.454  1399  1470 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+10-06 14:10:25.495  1723  2361 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 317 seconds.
+10-06 14:10:25.498  1723  2361 I BlobLobber: Canceling downloads: []
+10-06 14:10:25.506  1723  1723 I BgTaskExecutorImpl: Starting EXCLUSIVE background task BLOBLOBBER_SYNC.
+10-06 14:10:25.511  1723  2361 I ModelDownloadListener: Schdedule model download
+10-06 14:10:25.512  1723  2360 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-06 14:10:25.516  1723  2360 I FedAssExpListener: Successfully processed experiments changed.
+10-06 14:10:25.525  1723  1723 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-06 14:10:25.530  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.533  1399  1470 W AsyncOperation: operation=SetAppSpecificPropertiesOperationCall, opStatusCode=29503 [CONTEXT service_id=51 ]
+10-06 14:10:25.533  1399  1470 W AsyncOperation: OperationException[Status{statusCode=unknown status code: 29503, resolution=null}]
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 14:10:25.533  1399  1470 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 14:10:25.536  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.537  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.538  1723  2352 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: setAppSpecificProperties failed [CONTEXT service_id=301 ]
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: aard: 29503:
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at abmc.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at aawv.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at aawv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at bwen.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at bwen.ek(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at gzc.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+10-06 14:10:25.538  1455  1455 W NnApiDriverManager: 	at android.os.Binder.execTransact(Binder.java:1275)
+10-06 14:10:25.539  1723  2352 I A       : New OK_HEY model config map hash: reinitializing config map.
+10-06 14:10:25.542  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.544  1723  2352 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.545  1723  2352 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.545  1723  2352 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:25.545  1723  2352 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:25.546  1723  2352 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:25.546  1723  2352 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.549  1723  2352 I ModelDownloadController: #maybeDownloadHotwordModelWithMDD with locale: en-US, modelType: 2.
+10-06 14:10:25.551  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.552  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.553  4277  4517 V ClearcutMetricXmitter: Transmission is done.
+10-06 14:10:25.554  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.559  1723  2352 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.560  1723  2352 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.560  1723  2352 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.560  1723  2352 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.561  1723  2352 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+10-06 14:10:25.561  1723  2352 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.563  1723  2352 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okg, raw locale: en-US, locale: en-US
+10-06 14:10:25.568  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.572  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.573  1723  2352 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.574  1723  2352 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.574  1723  2352 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:25.574  1723  2352 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:25.574  1723  2352 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:25.574  1723  2352 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.575  1723  2352 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 14:10:25.576  1723  2352 I A       : Using proto config with mendel
+10-06 14:10:25.576  1723  2352 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.576  1723  2352 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.576  1723  2352 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:25.577  1723  2688 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-06 14:10:25.577  1723  2352 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:25.578  1723  2352 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:25.578  1723  2352 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:25.578  1723  2352 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-06 14:10:25.583  1723  2364 I A       : NGA enabled in interactor.
+10-06 14:10:25.583  1723  2364 I A       : Nga state changed to NgaStateDetails{state=ENABLED, isSpecialExperience=false}
+10-06 14:10:25.585  1723  2364 I A       : NGA enabled in interactor.
+10-06 14:10:25.591  1630  4422 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10132; state: DISABLED
+10-06 14:10:25.660  1723  2661 W MDD     : MDDManager Failed to init shared file metadata.
+10-06 14:10:25.662  1723  2478 I ModelDownloadController: Hotword models associated with downloaded MDD filegroups: [], pending groups: []
+10-06 14:10:25.676  1723  2661 I ModelDownloadController: Fetching and maybe downloading FileGroup with name: hotword_model_en-US_okhey, locale: en-US
+10-06 14:10:25.677  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.678  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.679  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.679  1723  2661 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.679  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.680  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.680  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.680  1723  2661 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+10-06 14:10:25.680  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.681  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.682  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.683  1723  2661 I A       : Using proto config with mendel
+10-06 14:10:25.684  1723  2661 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.684  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.685  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.685  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.685  1723  2661 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+10-06 14:10:25.686  1723  2661 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.693  1723  2360 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okg' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:25.707  1723  2360 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:25.710  1723  2364 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:25.718  1723  2352 D t       : Starting download: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:25.718  1723  2352 V t       : Is http uri, downloading (uri: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data)
+10-06 14:10:25.731  1399  1407 I .gms.persistent: Background young concurrent copying GC freed 252885(9867KB) AllocSpace objects, 2(76KB) LOS objects, 27% free, 24MB/34MB, paused 3.619ms,18us total 354.329ms
+10-06 14:10:25.751  1630  4422 I A       : Initializing all components
+10-06 14:10:25.754  1630  4422 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+10-06 14:10:25.754  1630  4422 I A       : [Memory] NGA configuration not yet available
+10-06 14:10:25.758  1630  2357 I A       : onIsEnabledChanged, isEnabled: false
+10-06 14:10:25.764  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.765  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.767  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.772  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.773  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.777  1630  2341 I A       : on opa visibility changed false
+10-06 14:10:25.779  1630  2341 I A       : on opa visibility changed false
+10-06 14:10:25.784  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.794  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.795  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.798  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.801  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.802  1630  2357 I A       : onOpaVisibilityChanged: false
+10-06 14:10:25.808  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.811  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.811  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.812  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.815  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.815  5004  5004 I A       : Initializing GMS Compliance Client Library...
+10-06 14:10:25.829   837   913 D EGL_emulation: app_time_stats: avg=16059.43ms min=16059.43ms max=16059.43ms count=1
+10-06 14:10:25.858  5004  5004 I A       : Checking for device compliance...
+10-06 14:10:25.859  5004  5004 I A       : Feature is disabled!
+10-06 14:10:25.879  5004  5004 I A       : Completed library init.
+10-06 14:10:25.883  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.884  1630  2357 I A       : Setting session to type: NO_SESSION
+10-06 14:10:25.884  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.884  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.884  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.885  1630  2357 I A       : setNavBarVisible: GestureNavBarVisible{navbarVisible=true}
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+10-06 14:10:25.886  1630  2357 I A       : onDisabled. Registered: false
+10-06 14:10:25.899  1630  2357 I NgaEntryPointEventSendr: setupConnection
+10-06 14:10:25.902  1399  1470 W bwft    : Succeeded but not registered: com.google.android.gms.appintegrity [CONTEXT service_id=51 ]
+10-06 14:10:25.914  1723  1723 I A       : Creating pss binder().
+10-06 14:10:25.917  1723  2688 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-06 14:10:25.919  1630  2357 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-06 14:10:25.919  1630  2357 E A       : com.google.common.f.s: MEDIUM
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.m.get(Unknown Source:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.nga.shared.v.a.o.b(PG:1)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.nga.shared.v.f.a.d.apply(Unknown Source:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at j$.util.Optional.map(Unknown Source:16)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.nga.shared.v.f.a.g.a(PG:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.staticplugins.opa.aj.c.b.p.apply(Unknown Source:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at j$.util.Optional.map(Unknown Source:16)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.staticplugins.opa.aj.c.b.q.b(PG:10)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.staticplugins.opa.aj.c.b.c.run(PG:17)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.common.util.concurrent.dn.run(PG:1)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.common.util.concurrent.do.run(PG:4)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 14:10:25.919  1630  2357 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 14:10:25.919  1630  2357 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.libraries.i.k.run(PG:2)
+10-06 14:10:25.919  1630  2357 E A       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 14:10:25.926   520   520 D FlashNotifController: requestStartFlashNotification
+10-06 14:10:25.926   520   520 I FlashNotifController: startFlashNotification: type=1, tag=android
+10-06 14:10:25.926   520   520 D FlashNotifController: Flash notification is disabled
+10-06 14:10:25.931  1630  2357 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+10-06 14:10:25.932  1630  2357 I NgaEntryPointEventSendr: onServiceConnected
+10-06 14:10:25.932  1723  1769 I A       : Calling beginBinderSession().
+10-06 14:10:25.934  1723  1769 I A       : beginBinderSession(): calling binder
+10-06 14:10:25.934  1630  2357 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+10-06 14:10:25.968  1615  2056 W AiAiEcho: LyftNotificationParser Ridesharing ETA not enabled
+10-06 14:10:25.968  1615  2056 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-06 14:10:25.989  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.989  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.989  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.989  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.989  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.990  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:25.990  1723  2360 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:25.990  1723  2360 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.990  1723  2360 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.990  1723  2360 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.990  1723  2360 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+10-06 14:10:25.990  1723  2360 I A       : Skipping. Expected model: 1 Found: 2
+10-06 14:10:25.992  1723  2360 I A       : Using proto config with mendel
+10-06 14:10:26.020  1630  2341 I A       : Subscribed to apa or classic variant change.
+10-06 14:10:26.021  1630  2357 I A       : onVarianceChanged newVariance = CLASSIC
+10-06 14:10:26.024  1723  2713 I MicroDetectionWorker: Initializing MicroDataManager InitializeType-2, isForced-true, isActivePhoneEnrollment-false isActiveGoogleHomeEnrollment-false
+10-06 14:10:26.025  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.027  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.028  1723  2364 I A       : Using proto config with mendel
+10-06 14:10:26.030  1723  2364 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.032  1723  2364 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.039  1723  2713 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+10-06 14:10:26.063  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.066  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.066  1723  3268 I PBSessionCacheImpl: Deleted sessionId[7579625434396679] from persistence.
+10-06 14:10:26.066  1723  2360 I ModelDownloadController: Hotword model update tasks finished.
+10-06 14:10:26.067  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.071  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.071  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.072  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.072  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.072  1723  2364 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.072  1723  2364 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.072  1723  2364 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.073  1723  2364 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.073  1723  2364 I MicroDataManager: Location for model with model type: 2 and locale: en-US, is : https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:26.079  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.083  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.083  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.083  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.084  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.084  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.085  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.086  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.086  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.086  1399  1470 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-06 14:10:26.086  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.086  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.087  1399  1470 W bwft    : Succeeded but not registered: com.google.android.gms.auth.easyunlock [CONTEXT service_id=51 ]
+10-06 14:10:26.087  1723  2364 I MicroModelsUtil: #getHotwordModel [locale: en-US, modelType: 2]
+10-06 14:10:26.096  1723  2360 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791295825666]
+10-06 14:10:26.097  1630  2357 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+10-06 14:10:26.104  1723  2478 I MicroDataManager: MicroDataManager InitializationTask. googleHotwordData is null: true, hotwordModel is null: false , sourceLocationOfCurrentHotwordModel https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+10-06 14:10:26.105  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.106  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.106  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.106  1723  2713 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.106  1723  2713 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.106  1723  2713 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.106  1723  2713 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.106  1723  2713 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.107  1723  2713 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.107  1723  2713 I MicroDetectionWorker: Removing hotword detection due to no account being used.
+10-06 14:10:26.107  1723  2713 I A       : isOpaHotwordEnabled: false
+10-06 14:10:26.107  1723  2713 I A       : Disabling the hotword detector.
+10-06 14:10:26.111   467  2978 D NuPlayerDriver: NuPlayerDriver(0x70c73bccb250) created, clientPid(837)
+10-06 14:10:26.114   139   139 I hwservicemanager: getTransport: Cannot find entry android.hardware.media.omx@1.0::IOmx/default in either framework or device VINTF manifest.
+10-06 14:10:26.115   467  2978 D MediaPlayerService: OMX service is not available
+10-06 14:10:26.118  1723  2713 I MicroDetectionState: Should stop hotword detection immediately - true
+10-06 14:10:26.120  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.120  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.122  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.125  1723  2713 I MicroDetectionState: Should stop hotword detection immediately - true
+10-06 14:10:26.127  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.132  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.191   467  5086 D GenericSource: FileSource remote
+10-06 14:10:26.231  1630  2341 I A       : [Memory] eligibility: StashEligibility{6}
+10-06 14:10:26.232  1630  2341 I A       : StashOnboardingStateImpl.initialize
+10-06 14:10:26.234  1630  2341 I A       : Initialize
+10-06 14:10:26.235  1630  2341 I A       : Subscribing to eligibility updates [IVR]
+10-06 14:10:26.236  1630  2341 I A       : Disconnecting from SysUi, flag disabled [IVR]
+10-06 14:10:26.236  1630  2341 I A       : Disconnecting from SysUi, eligibilityNotifier absent [IVR]
+10-06 14:10:26.237  1630  2341 I A       : Disconnecting from SysUi, VM not enabled [IVR]
+10-06 14:10:26.240  1630  2341 I A       : No binding to unbind [IVR]
+10-06 14:10:26.240  1630  2341 I A       : Disconnected from SysUi [IVR]
+10-06 14:10:26.241  1630  2357 I A       : stopListening(NGA_PAUSED_UNKNOWN_REASON, NGA_CREATE), idleOverride=NOT_LISTENING
+10-06 14:10:26.262  1723  2713 I A       : Trying to enqueue PieTriggeringWorker
+10-06 14:10:26.265  1630  1630 I A       : eventData = # com.google.android.apps.gsa.search.shared.service.b.ur@e7b2d4ee
+10-06 14:10:26.265  1630  1630 I A       : [255935327] {
+10-06 14:10:26.265  1630  1630 I A       : }
+10-06 14:10:26.279  1723  2713 I A       : Trying to enqueue PieTriggeringWorker
+10-06 14:10:26.282  1630  1630 I A       : eventData = # com.google.android.apps.gsa.search.shared.service.b.ur@e7b2d4ee
+10-06 14:10:26.282  1630  1630 I A       : [255935327] {
+10-06 14:10:26.282  1630  1630 I A       : }
+10-06 14:10:26.285  1630  2357 I A       : Logging success flow
+10-06 14:10:26.297  1630  2341 I A       : Logging success flow
+10-06 14:10:26.317   520  2101 I MediaFocusControl: requestAudioFocus() from uid/pid 10168/837 AA=USAGE_NOTIFICATION/CONTENT_TYPE_SONIFICATION clientId=android.media.AudioManager@5cffe91 callingPack=com.android.systemui req=3 flags=0x0 sdk=34
+10-06 14:10:26.320   520  2101 I AudioService.FadeOutManager: unfadeOutUid() uid:10168
+10-06 14:10:26.333  2060  5083 D DownloadManager: [1] Starting
+10-06 14:10:26.338  2060  2514 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10087; state: ENABLED
+10-06 14:10:26.341  1630  2175 D BluetoothHeadset: Binding service...
+10-06 14:10:26.354  1630  2357 I A       : Successfully initialized all components
+10-06 14:10:26.361  2060  5090 D DownloadManager: [2] Starting
+10-06 14:10:26.365  1723  2361 W earchbox:search: Long monitor contention with owner Blocking Thread #14 (2646) at void com.google.android.apps.gsa.staticplugins.t.m.g()(PG:11) waiters=0 in void com.google.android.apps.gsa.staticplugins.t.m.j() for 816ms
+10-06 14:10:26.368  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.369  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.369  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.370  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.375  1723  2361 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-06 14:10:26.378  1723  2713 I MicroDetectionState: Should stop hotword detection immediately - true
+10-06 14:10:26.380  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.383  1723  2713 I A       : Using proto config with mendel
+10-06 14:10:26.408   337  5091 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10087 0}
+10-06 14:10:26.409   337  5093 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:26.414   337  5093 I resolv  : res_nsend: used send_dg 49 terrno: 0
+10-06 14:10:26.414   337  5093 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-06 14:10:26.418  1723  2361 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-06 14:10:26.421   337  5094 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10087 0}
+10-06 14:10:26.430   337  5096 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:26.430   337  5096 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78baaa692f10
+10-06 14:10:26.430   337  5096 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-06 14:10:26.431   337  5092 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:26.431   337  5092 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78baaa692850
+10-06 14:10:26.431   337  5092 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-06 14:10:26.431   337  5095 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:26.431   337  5095 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78baaa692850
+10-06 14:10:26.431   337  5095 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-06 14:10:26.433  2060  5090 D TrafficStats: tagSocket(79) with statsTag=0xffffff01, statsUid=10132
+10-06 14:10:26.438  1455  3700 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-06 14:10:26.440  1455  4961 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-06 14:10:26.449  1630  2889 D BluetoothHeadset: Proxy object connected
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: Error locating SCO method
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: java.lang.NoSuchMethodException: android.bluetooth.BluetoothHeadset.startScoUsingVirtualVoiceCall [class android.bluetooth.BluetoothDevice]
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at java.lang.Class.getMethod(Class.java:2937)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at java.lang.Class.getMethod(Class.java:2449)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at com.google.android.apps.gsa.speech.audio.a.l.<clinit>(PG:1)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at com.google.android.apps.gsa.speech.audio.a.i.onServiceConnected(PG:1)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at android.bluetooth.BluetoothProfileConnector$3.handleMessage(BluetoothProfileConnector.java:234)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at android.os.Looper.loopOnce(Looper.java:205)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at android.os.Looper.loop(Looper.java:294)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at java.lang.reflect.Method.invoke(Native Method)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+10-06 14:10:26.452  1630  1630 E VS.BluetoothShim: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+10-06 14:10:26.465  1630  2339 I A       : No BT device
+10-06 14:10:26.467  1455  4851 W Icing   : No valid account for uploading user actions
+10-06 14:10:26.493  2060  5083 D TrafficStats: tagSocket(78) with statsTag=0xffffff01, statsUid=10132
+10-06 14:10:26.499  1455  4851 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-06 14:10:26.510  1455  4851 W Icing   : No valid account for uploading user actions
+10-06 14:10:26.518  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.518  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.519  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.521  1723  2939 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.526  1455  4851 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-06 14:10:26.527  1723  2939 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.528  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.529  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.529  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.529  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.529  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.532  1723  2646 E BistoWorker: Couldn't get logged in Google account.
+10-06 14:10:26.533  1723  2361 I BistoWorker: Performing LockscreenPersonalResponseSetting migration.
+10-06 14:10:26.537  1723  2939 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.538  1723  2939 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.538  1723  2939 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.538  1723  2939 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.538  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.538  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.539  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.539  1723  2939 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.539  1723  2939 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.539  1723  2939 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.539  1723  2939 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.539  1723  2939 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.539  1723  2939 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.540  1723  2939 I A       : hasHotwordEverywhere-true
+10-06 14:10:26.540  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.540  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.541  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.541  1723  2939 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.541  1723  2939 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.541  1723  2939 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.543  1723  2939 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.543  1723  2939 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.543  1723  2939 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.544  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.545  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.547  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.547  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.548  1723  2939 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791295825666]
+10-06 14:10:26.560  1723  2713 I BistoSessionController: onStart no extra context
+10-06 14:10:26.561  1723  2713 I BistoSessionController: handleGenericClientEvent ID = 455
+10-06 14:10:26.564  1723  2939 I HotwordService: Model ID: en_us_x_google_agsa__p20230131_fedhot_standalone_fl_full_training_3wlTKwxhekc8fk7-d9loeGg
+10-06 14:10:26.564  1723  2939 I HotwordService: hotwordModelLocation is null false, locale is en-US, re-mapped Chinese locale
+10-06 14:10:26.565  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.567  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.569  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.569  1723  2939 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.569  1723  2939 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.569  1723  2939 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.570  1723  2939 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.570  1723  2939 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.570  1723  2939 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.571  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.572  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.572  1723  2713 E BistoWorker: Couldn't get logged in Google account.
+10-06 14:10:26.573  1723  2939 I A       : Using proto config with mendel
+10-06 14:10:26.573  1723  2939 I A       : Merging legacy hotword config map with new proto.
+10-06 14:10:26.573  1723  2939 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.573  1723  2939 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-06 14:10:26.573  1723  2939 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-06 14:10:26.573  1723  2939 I A       : Skipping. Expected model: 2 Found: 1
+10-06 14:10:26.573  1723  2939 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-06 14:10:26.574  1630  2339 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1791295825666]
+10-06 14:10:26.578  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.578  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.578  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.578  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.579  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.586  1630  2341 I A       : Disconnecting from SysUi, flag disabled [IVR]
+10-06 14:10:26.586  1630  2341 I A       : Disconnecting from SysUi, eligibilityNotifier absent [IVR]
+10-06 14:10:26.587  1630  2341 I A       : Disconnecting from SysUi, VM not enabled [IVR]
+10-06 14:10:26.588  1630  2341 I A       : No binding to unbind [IVR]
+10-06 14:10:26.589  1723  2713 I A       : Trying to enqueue PieTriggeringWorker
+10-06 14:10:26.591  1630  1630 I A       : eventData = # com.google.android.apps.gsa.search.shared.service.b.ur@e7b2d4ee
+10-06 14:10:26.591  1630  1630 I A       : [255935327] {
+10-06 14:10:26.591  1630  1630 I A       : }
+10-06 14:10:26.591  1630  2341 I A       : Disconnected from SysUi [IVR]
+10-06 14:10:26.594  1630  2357 I NgaEntryPointEventSendr: setupConnection
+10-06 14:10:26.595  1630  2339 I GsaVoiceInteractionSrv: hotwordModel is null :  false
+10-06 14:10:26.596  1723  1723 I A       : Creating pss binder().
+10-06 14:10:26.610  1630  2357 I NgaEntryPointEventSendr: State changed: Disconnected => Connecting
+10-06 14:10:26.612  1630  2339 I HwDetectorWithState: Updating detector.
+10-06 14:10:26.612  1630  2357 I NgaEntryPointEventSendr: onServiceConnected
+10-06 14:10:26.613  1723  2939 I A       : Calling beginBinderSession().
+10-06 14:10:26.613  1630  2339 I BistoHotwordHelper: getHotwordActive::active query: null, watch: false, devices connected: []
+10-06 14:10:26.613  1723  2939 I A       : beginBinderSession(): calling binder
+10-06 14:10:26.614  1630  2357 I NgaEntryPointEventSendr: State changed: Connecting => Ready
+10-06 14:10:26.621  1630  2339 E HwDetectorWithState: a: 3
+10-06 14:10:26.628  1723  2713 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 241] task was not run. Callback from Service received after client was disposed.
+10-06 14:10:26.629  1723  2713 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 241] task was not run. Callback from Service received after client was disposed.
+10-06 14:10:26.630  1723  2713 W A       : UiCallbackStub-onGenericEvent[ServiceEvent = 60] task was not run. Callback from Service received after client was disposed.
+10-06 14:10:26.631  1723  3268 I PBSessionCacheImpl: Deleted sessionId[7579625434396686] from persistence.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.635  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.636  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.636  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.636  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.636  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.636  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.637  1630  2339 I GsaVoiceInteractionSrv: #checkDspStatus
+10-06 14:10:26.637  1630  2339 I BistoHotwordHelper: setting speaker id present: false
+10-06 14:10:26.640  1630  2339 I BistoHotwordHelper: setting hotword model of size: 632970 bytes
+10-06 14:10:26.640  1630  2339 I BistoHotwordHelper: setting modeltype: X Google
+10-06 14:10:26.641  1630  2339 I BistoHotwordHelper: setHotwordVoiceLocale: prev: en-US, new: en-US
+10-06 14:10:26.642  1723  2713 W SessionLifecycleManager: Client : AttachedClient[7579625434396680, ClientConfig[mFlags=[40000088001] mSuggestFlags=[0] mClientId=HOTWORD_SERVICE mSessionType=search publicSearchServiceCallerUid=-1]] has no associated SessionController
+10-06 14:10:26.642  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.642  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.642  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.642  1723  2713 W SearchServiceCore: Abort, client detached.
+10-06 14:10:26.646  1630  2357 I NgaEntryPointEventSendr: State changed: Ready => Disconnected (onOpaDisconnected)
+10-06 14:10:26.657  2060  5083 D CompatibilityChangeReporter: Compat change id reported: 247079863; UID 10087; state: ENABLED
+10-06 14:10:26.821   467  5082 I GenericSource: start
+10-06 14:10:26.823   837   837 D MediaRouter: onRestoreRoute() : route=RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-06 14:10:26.826   837   837 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-06 14:10:26.833   467  2978 D NuPlayerDriver: stop(0x70c73bccb250)
+10-06 14:10:26.834   837  5069 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+10-06 14:10:26.834   837  5069 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+10-06 14:10:26.835   467  2978 D NuPlayerDriver: reset(0x70c73bccb250) at state 8
+10-06 14:10:26.839   467  5106 D CCodec  : allocate(c2.android.vorbis.decoder)
+10-06 14:10:26.841   467  5106 I CCodec  : setting up 'default' as default (vendor) store
+10-06 14:10:26.857   467  5106 I CCodec  : Created component [c2.android.vorbis.decoder]
+10-06 14:10:26.858   467  5106 D CCodecConfig: read media type: audio/vorbis
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+10-06 14:10:26.859   467  5106 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+10-06 14:10:26.860   467  5106 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+10-06 14:10:26.860   467  5106 D CCodecConfig: c2 config diff is Dict {
+10-06 14:10:26.860   467  5106 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+10-06 14:10:26.860   467  5106 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+10-06 14:10:26.860   467  5106 D CCodecConfig:   c2::u32 input.delay.value = 0
+10-06 14:10:26.860   467  5106 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+10-06 14:10:26.860   467  5106 D CCodecConfig:   string output.media-type.value = "audio/raw"
+10-06 14:10:26.860   467  5106 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+10-06 14:10:26.860   467  5106 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+10-06 14:10:26.860   467  5106 D CCodecConfig: }
+10-06 14:10:26.861   467  5106 D MediaCodec: flushMediametrics
+10-06 14:10:26.862   467  5106 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+10-06 14:10:26.862   467  5106 D CCodecConfig: no c2 equivalents for durationUs
+10-06 14:10:26.862   467  5106 D CCodecConfig: no c2 equivalents for csd-1
+10-06 14:10:26.862   467  5106 D CCodecConfig: no c2 equivalents for flags
+10-06 14:10:26.862   467  5106 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 70000
+10-06 14:10:26.862   467  5106 W Codec2Client: query -- param skipped: index = 1107298332.
+10-06 14:10:26.862   467  5106 D CCodec  : encoding statistics level = 0
+10-06 14:10:26.862   467  5106 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t bitrate = 70000
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t channel-count = 1
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t max-input-size = 32768
+10-06 14:10:26.862   467  5106 D CCodec  :   string mime = "audio/vorbis"
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t sample-rate = 48000
+10-06 14:10:26.862   467  5106 D CCodec  : }
+10-06 14:10:26.862   467  5106 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t channel-count = 1
+10-06 14:10:26.862   467  5106 D CCodec  :   string mime = "audio/raw"
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t sample-rate = 48000
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t channel-mask = 1
+10-06 14:10:26.862   467  5106 D CCodec  :   int32_t android._config-pcm-encoding = 2
+10-06 14:10:26.862   467  5106 D CCodec  : }
+10-06 14:10:26.862   467  5106 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+10-06 14:10:26.862   467  5106 I MediaCodec: MediaCodec will operate in async mode
+10-06 14:10:26.862   467  5105 D MediaCodec: keep callback message for reclaim
+10-06 14:10:26.863   467  5106 W Codec2Client: query -- param skipped: index = 1342179345.
+10-06 14:10:26.863   467  5106 W Codec2Client: query -- param skipped: index = 2415921170.
+10-06 14:10:26.864   467  5106 D C2Store : Using DMABUF Heaps
+10-06 14:10:26.864   467  5106 D CCodecBufferChannel: [c2.android.vorbis.decoder#569] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+10-06 14:10:26.867   520   896 D BufferPoolAccessor2.0: bufferpool2 0x734bc94adb08 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/18 (fetch/transfer)
+10-06 14:10:26.867   520   896 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94adb08 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 18, 72% unfetched
+10-06 14:10:26.867   520   883 D BufferPoolAccessor2.0: bufferpool2 0x734bc94adfa8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/24 (fetch/transfer)
+10-06 14:10:26.867   520   883 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94adfa8 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 24, 75% unfetched
+10-06 14:10:26.867   467  5106 I CCodecBufferChannel: [c2.android.vorbis.decoder#569] Created output block pool with allocatorID 16 => poolID 26 - OK
+10-06 14:10:26.867   467  5106 D CCodecBufferChannel: [c2.android.vorbis.decoder#569] Configured output block pool ids 26 => OK
+10-06 14:10:26.868   467  5106 I DMABUFHEAPS: Using DMA-BUF heap named: system
+10-06 14:10:26.868   837  1239 D BufferPoolAccessor2.0: bufferpool2 0x734bc946df38 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/36 (fetch/transfer)
+10-06 14:10:26.868   837  1239 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc946df38 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 36, 83% unfetched
+10-06 14:10:26.868   837  1239 D BufferPoolAccessor2.0: bufferpool2 0x734bc9467bc8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/38 (fetch/transfer)
+10-06 14:10:26.869   837  1239 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc9467bc8 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 38, 84% unfetched
+10-06 14:10:26.869   837  1239 D BufferPoolAccessor2.0: bufferpool2 0x734bc946e628 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/18 (fetch/transfer)
+10-06 14:10:26.869   837  1239 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc946e628 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 18, 67% unfetched
+10-06 14:10:26.871   520   626 D BufferPoolAccessor2.0: bufferpool2 0x734bc94acd28 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/34 (fetch/transfer)
+10-06 14:10:26.871   520   626 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94acd28 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 34, 85% unfetched
+10-06 14:10:26.872   520   883 D BufferPoolAccessor2.0: bufferpool2 0x734bc94b4568 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/34 (fetch/transfer)
+10-06 14:10:26.872   520   883 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94b4568 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 34, 85% unfetched
+10-06 14:10:26.872   520   896 D BufferPoolAccessor2.0: bufferpool2 0x734bc94ab3b8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/24 (fetch/transfer)
+10-06 14:10:26.872   520   896 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94ab3b8 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 24, 75% unfetched
+10-06 14:10:26.872   520   896 D BufferPoolAccessor2.0: bufferpool2 0x734bc94a8578 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/26 (fetch/transfer)
+10-06 14:10:26.872   520   896 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x734bc94a8578 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 26, 81% unfetched
+10-06 14:10:26.877   476   903 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x71772b267158 cached: 0/0M, 0/0% in use; allocs: 0, 0% recycled; transfers: 0, 0% unfetched
+10-06 14:10:26.878   476   886 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+10-06 14:10:26.878   467  5112 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+10-06 14:10:26.878   467  5105 D MediaCodec: flushMediametrics
+10-06 14:10:26.881   467  5082 D NuPlayerDriver: notifyResetComplete(0x70c73bccb250)
+10-06 14:10:26.881   467  2978 W AMessage: failed to post message as target looper for handler 0 is gone.
+10-06 14:10:26.883   520  1103 I MediaFocusControl: abandonAudioFocus() from uid/pid 10168/837 clientId=android.media.AudioManager@5cffe91
+10-06 14:10:27.057  2060  5083 D DownloadManager: [1] Finished with status SUCCESS
+10-06 14:10:27.168  1399  1407 I .gms.persistent: Background young concurrent copying GC freed 46588(2971KB) AllocSpace objects, 2(104KB) LOS objects, 0% free, 34MB/34MB, paused 367us,18.024ms total 188.058ms
+10-06 14:10:27.280  1630  1630 V ClearcutMetricXmitter: Transmission is done.
+10-06 14:10:27.319  1399  1407 I .gms.persistent: Background concurrent copying GC freed 328231(13MB) AllocSpace objects, 6(4636KB) LOS objects, 50% free, 18MB/37MB, paused 29us,279us total 136.418ms
+10-06 14:10:27.363  4976  4996 I TestRunner: finished: confirmedOfferMatchesEveryMember(com.cabfusion.app.BackendRulesTest)

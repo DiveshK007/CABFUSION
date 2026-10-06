@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.cabfusion.app.BackendRulesTest" tests="5" failures="0" errors="0" skipped="0" time="201.085" timestamp="2026-10-06T14:13:46" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 14" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="confirmedOfferMatchesEveryMember" classname="com.cabfusion.app.BackendRulesTest" time="2.198" />
+  <testcase name="soloRideChargesSoloFare" classname="com.cabfusion.app.BackendRulesTest" time="1.077" />
+  <testcase name="riderCannotBeInTwoGroups" classname="com.cabfusion.app.BackendRulesTest" time="0.986" />
+  <testcase name="twoDriversCannotAcceptTheSameRide" classname="com.cabfusion.app.BackendRulesTest" time="0.755" />
+  <testcase name="fullRideFlow" classname="com.cabfusion.app.ScreenshotFlowTest" time="193.247" />
+</testsuite>

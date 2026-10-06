@@ -1,0 +1,37 @@
+10-06 14:10:29.486  4976  4996 I TestRunner: started: twoDriversCannotAcceptTheSameRide(com.cabfusion.app.BackendRulesTest)
+10-06 14:10:29.518   337  5146 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:29.520   337  5147 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:29.520   337  5147 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:29.520   337  5147 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:29.522   337  5149 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:29.523   337  5150 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:29.524   337  5148 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:29.524   337  5148 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:29.524   337  5148 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:29.525   337  5152 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:29.525  4976  5141 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.525   337  5152 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:29.526   337  5152 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:29.526   337  5151 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10192 0}
+10-06 14:10:29.527   337  5154 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:29.528   337  5154 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:29.528   337  5154 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:29.528   337  5156 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-06 14:10:29.528   337  5156 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69ce90
+10-06 14:10:29.528   337  5156 I resolv  : doQuery: rcode=0, ancount=2, return value=107
+10-06 14:10:29.528   337  5153 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:29.528   337  5153 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:29.528   337  5153 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:29.529  4976  5144 D TrafficStats: tagSocket(90) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.530  4976  5142 D TrafficStats: tagSocket(96) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.530   337  5157 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:29.530   337  5157 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:29.530   337  5157 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:29.531  4976  5145 D TrafficStats: tagSocket(94) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.532   337  5155 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-06 14:10:29.532   337  5155 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x78bada69de50
+10-06 14:10:29.532   337  5155 I resolv  : doQuery: rcode=0, ancount=2, return value=123
+10-06 14:10:29.533  4976  5143 D TrafficStats: tagSocket(91) with statsTag=0xffffffff, statsUid=-1
+10-06 14:10:29.647  4277  4358 W Bugle   : TextClassifierLibManagerImpl: Reclaiming memory at level: 40
+10-06 14:10:29.648  1455  1455 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-06 14:10:30.259  4976  4996 I TestRunner: finished: twoDriversCannotAcceptTheSameRide(com.cabfusion.app.BackendRulesTest)

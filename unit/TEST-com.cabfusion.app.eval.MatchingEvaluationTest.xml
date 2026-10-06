@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cabfusion.app.eval.MatchingEvaluationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-06T14:06:32" hostname="runnervm8df0l" time="13.954">
+  <properties/>
+  <testcase name="evaluateGroupOfThree" classname="com.cabfusion.app.eval.MatchingEvaluationTest" time="3.589"/>
+  <testcase name="evaluatePairs" classname="com.cabfusion.app.eval.MatchingEvaluationTest" time="7.24"/>
+  <testcase name="matchingLatency" classname="com.cabfusion.app.eval.MatchingEvaluationTest" time="3.125"/>
+  <system-out><![CDATA[section,name,detail,value
+ranked,Sanjay,score|overlap|pickup_gap_m,97|99|297
+stop,Divesh,pickup,Koyambedu
+stop,Sanjay,pickup,Koyambedu (Rohini)
+stop,Divesh,drop,Guindy
+stop,Sanjay,drop,Guindy
+fare,Divesh,solo|share|saving_pct,265|125|53
+fare,Sanjay,solo|share|saving_pct,247|113|54
+trip,pooled,km|min,14.4|18
+trip,solo_sum,km,26.2
+case,rider_a,rider_b,note,score,overlap_pct,direction,pickup_gap_m,detour_a,detour_b,solo_a_km,solo_b_km,pooled_km,solo_fare_a,solo_fare_b,share_a,share_b,saving_a_pct,saving_b_pct,vehicle_km_saved_pct,route_source
+1,Koyambedu -> Guindy,Koyambedu (Rohini) -> Guindy,same corridor; pickups 300 m apart,97,99,1.00,297,0.76,0.80,13.7,12.5,14.4,265,247,125,113,53,54,45,OSRM
+2,Koyambedu -> Guindy,Vadapalani -> Guindy,second rider joins on the way,rejected,,,2857,,,13.7,8.2,,,,,,,,,OSRM
+3,Koyambedu -> Guindy,Koyambedu -> Velachery,same start; nearby drops,86,70,0.99,0,0.71,0.88,13.7,15.3,16.8,265,291,126,141,52,52,42,OSRM
+4,Vadapalani -> Velachery,Kodambakkam -> Tidel Park,parallel southbound trips,33,0,0.97,1470,,,9.8,11.5,,,,,,,,,OSRM
+5,Anna Nagar West Depot -> T. Nagar,Koyambedu -> Guindy,partial overlap,64,55,0.97,2048,1.05,0.89,9.0,13.7,19.2,192,265,119,181,38,32,16,OSRM
+6,Chennai Central -> Adyar,Egmore -> Adyar,same destination,54,25,0.99,1920,1.01,0.98,12.8,10.7,14.8,249,218,131,109,47,50,37,OSRM
+7,Koyambedu -> Guindy,Porur -> CIT Kundrathur,pickups 4 km apart,rejected,,,5416,,,13.7,16.2,,,,,,,,,OSRM
+8,Koyambedu -> Guindy,Anna Nagar -> Egmore,different direction,rejected,,,2399,,,13.7,7.1,,,,,,,,,OSRM
+9,Tambaram -> Guindy,Guindy -> Tambaram,opposite direction,rejected,,,15922,,,20.1,18.2,,,,,,,,,OSRM
+10,Koyambedu -> Guindy,Koyambedu -> Chennai Airport,drop off the corridor,81,70,0.78,0,0.71,0.98,13.7,17.3,23.2,265,318,154,195,42,39,25,OSRM
+pool_size,mean_ms,max_ms,compatible
+10,0.0,0.1,0
+50,10.1,11.5,12
+100,21.9,24.5,31
+250,47.8,50.6,68
+500,101.4,104.9,131
+1000,209.9,215.7,280
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
